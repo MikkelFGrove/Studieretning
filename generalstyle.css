@@ -1,0 +1,147 @@
+#outer_container { 
+  background-color: beige;
+  width: 70rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#banner_container{ 
+  background-color: lightgrey;
+}
+
+#studieretning_container{ 
+  text-align: center;
+}
+
+#content_container{ 
+  background-color: darkgrey;
+}
+
+#footer_container{ 
+  background-color: aqua;
+}
+
+/*#region navbar */
+  .column {   
+    float: left;
+    width: 20%;
+    background-color: lightcoral;
+    padding-left: 2%;
+  }
+
+  #content_container:after{content: "";display: table;clear: left;}
+  table, td, th {
+    border: 1px solid;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  tr {
+    height: 22px;
+  }
+
+  .navbar {
+    background-color: #0E446B;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .navbar li {
+    float: left;
+  }
+
+  .navbar a {
+    display: block;
+    color: rgb(245, 245, 245);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar label {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .navbar label::before {
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 1px;
+    background-color: #ddd;
+    right: 0;
+    top: 25%;
+  }
+
+  .navbar a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.15),
+    0 0 30px rgba(255, 255, 255, 0.1),
+    0 0 40px rgba(255, 255, 255, 0.05);
+    }
+  
+  .dropdown a:hover{
+    cursor:default;
+  }
+
+  .dropdown {
+    display: inline-block;
+    
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    text-align: left;
+    font-size: 0.8rem;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display:block;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .dropdown-content a:hover {
+      text-shadow: none;
+      cursor: pointer;
+      color: black;
+      background-color: #ebebeb;
+  }
+
+  .dropdown-content  a:last-child:hover {
+    border-radius: 0px 0px 5px 5px;
+}
+
+  .dropdown-content a:last-child {
+    border-bottom: none;
+    padding-bottom: 3%;
+}
+/*#endregion */

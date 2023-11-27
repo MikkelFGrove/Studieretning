@@ -2,43 +2,84 @@
 <html>
 
 <head>
-  <title>Studieretningsvælger</title>
+  <link rel="stylesheet" href="generalstyle.css">
+  <title>Studie Designer</title>
   <meta charset="utf-8">
-  <style>
-      #outer_container { background-color: beige; width: 100%;}
-      #banner_container{ background-color: lightgrey;}
-      #studieretning_container{ text-align: center;}
-      #content_container{ background-color: darkgrey;}
-      #footer_container{ background-color: aqua;}
-      /* Create three equal columns that floats next to each other */
-  /* Left column */
-  .column {   
-    float: left;
-    width: 20%;
-    background-color: lightcoral;
-    padding-left: 2%;
-  }
-
-  #content_container:after{content: "";display: table;clear: left;}
-  table, td, th {
-    border: 1px solid;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  tr {
-    height: 22px;
-  }
-  </style>
 </head>
+
 
 <body>
  <div id="outer_container">
-    <div id="banner_container">Næstved Gymnasium og HF</div>
+  <div id="banner_container">Næstved Gymnasium og HF</div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+        <li><label>Studie Designer</label></li>
+        <li class="dropdown">
+            <a>Naturvidenskab</a>
+            <div class="dropdown-content">
+                <a href="#">Matematik A, Kemi A, Fysik B</a>
+                <a href="#">Matematik A, Geovidenskab A, Kemi B</a>
+                <a href="#">Matematik A, Fysik B, Kemi B</a>
+                <a href="#">Matematik A, Fysik A, Kemi B</a>
+                <a href="#">Bioteknologi A, Fysik B, Matematik A</a>
+                <a href="#">Biologi A, Kemi B</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+          <a>Samfundsvidenskab</a>
+          <div class="dropdown-content">
+              <a href="#">Samfundsfag A, Matematik A</a>
+              <a href="#">Engelsk A, Samfundsfag A</a>
+              <a href="#">Engelsk A, Samfundsfag A (buisness)</a>
+              <a href="#">Engelsk A, Samfundsfag A (engelsk undervisning)</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a>Sproglig</a>
+          <div class="dropdown-content">
+              <a href="#">Engelsk A, Tysk fortsættersprog A, Samfundsfag B</a>
+              <a href="#">Engelsk A, Tysk fortsættersprog A, Latin C</a>
+              <a href="#">Engelsk A, Spansk begyndersprog A, Tysk fortsættersprog B</a>
+              <a href="#">Engelsk A, Spansk begyndersprog A, Samfundsfag B, Latin C</a>
+              <a href="#">Engelsk A, Spansk begyndersprog A, Latin C</a>
+              <a href="#">Engelsk A, Spansk begyndersprog A, Kinesisk B</a>
+              <a href="#">Engelsk A, Russisk A, Samfundsfag B, Latin C</a>
+              <a href="#">Engelsk A, Russisk A, Latin C</a>
+              <a href="#">Engelsk A, Kinesisk A, Samfundsfag B, Latin C</a>
+              <a href="#">Engelsk A, Kinesisk A, Latin C</a>
+              <a href="#">Engelsk A, Fransk fortsætter A, Samfundsfag B</a>
+              <a href="#">Engelsk A, Fransk fortsætter A, Latin C</a>
+              <a href="#">Engelsk A, Fransk begyndersprog A, Samfundsfag B</a>
+              <a href="#">Engelsk A, Fransk begyndersprog A, Latin C</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a>Kunstenrisk</a>
+          <div class="dropdown-content">
+              <a href="#">Engelsk A, Musik A</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a>Idræt</a>
+          <div class="dropdown-content">
+              <a href="#">Biologi A, Kemi B, Idræt B</a>
+          </div>
+      </li>
+    </ul>
+  </nav>
+
+
+    
     <div id="studieretning_container">Studretningsfag: Matematik A, Fysik B, Kemi B</div>
+    
+
+    <!-- Table: -->
     <div id="content_container">
         <div class="column">
             <table>
